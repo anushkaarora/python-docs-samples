@@ -83,12 +83,13 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.mysql' instead of the following.
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'polls',
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'USER': 'root',
+        'PASSWORD': 'passcode',
+        'HOST': 'sql-ch-dev-mysql.dev',
+        'PORT': '3306',
     }
 }
+
 # [END dbconfig]
 
 # Internationalization
